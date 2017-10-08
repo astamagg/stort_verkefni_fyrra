@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  max-width: $max-width;
+  min-height: 200px;
+  margin: 0 auto $gutter;
+  align-items: center;
+
+  &__image {
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: auto;
+  }
+  &__forsida {
+    &-content{
+      animation-name: none;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+    }
+  }
+}
