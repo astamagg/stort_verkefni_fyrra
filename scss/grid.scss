@@ -15,6 +15,9 @@
   &-12 {
     @include columns(12);
   }
+  &-6 {
+    @include columns(6);
+  }
   &-medium {
     @media (max-width: 599px) {
       &-12 {
