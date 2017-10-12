@@ -1,7 +1,22 @@
-$grunnur:16px;
+/* Breytur sem notaðar eru endurtekið */
+$grunnur-font: 16px; /* Stöðluð textastærð */
+$gutter: 20px; /* Staðlaður gutter á grind */
+
+/* Staðlaðar skjástærðir */
 $max-width: 1200px;
-$gutter: 20px;
+$mid-with: 600px;
+$min-width: 400px;
 
 $font-main: 'Open-sans', 'helvetica','sans-serif';
 
 $font-Head: 'Roboto Slap';
+
+@import "scss/grid";
+@import "scss/header";
+@import "scss/footer";
+@import "scss/heading";
+@import "scss/text";
+@import "scss/button";
+@import "scss/card";
+@import "scss/cardlist";
+@import "scss/navbar";
