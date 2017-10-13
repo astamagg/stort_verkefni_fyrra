@@ -18,6 +18,9 @@
   &-6 {
     @include columns(6);
   }
+  &-4 {
+    @include columns(4);
+  }
   &-medium {
     @media (max-width: 599px) {
       &-12 {
@@ -28,7 +31,7 @@
   &-small {
     @media (max-width: 399px) {
       &-12 {
-        @@include columns(12);
+        @include columns(12);
       }
     }
   }
