@@ -1,21 +1,36 @@
 .header {
-  display: flex;
   max-width: $max-width;
-  min-height: 200px;
-  margin: 0 auto $gutter;
   align-items: center;
 
-  &__image {
-    height: 30rem;
-    background-repeat: no-repeat;
+  &__forsida {
+    background: url("bg.jpg") no-repeat fixed;
+    height: 60rem;
+    width: 100%;
+    background-size: cover;
     background-position: 50% 50%;
     overflow: auto;
-  }
-  &__forsida {
+    display: flex;
+    justify-content: center;
     &-content{
       animation-name: none;
       animation-duration: 3s;
       animation-timing-function: ease-in;
+      font-family: "Roboto Slab", serif;
+      font-size: 3* $grunnur-font;
     }
+  }
+  &__um-kaupa {
+    background: url("bg-subpage.jpg");
+    height: 30rem;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2* $gutter;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5*$grunnur-font;
   }
 }
