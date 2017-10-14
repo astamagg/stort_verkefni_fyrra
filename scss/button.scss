@@ -1,0 +1,13 @@
+.button {
+  color: white;
+  background-color:rgba(0, 0,0, 0.7);
+  padding: 0.5*$gutter 2* $gutter 0.5*$gutter 2*$gutter;
+  margin: 0 auto 0;
+  font-family: 'Open sans' serif;
+  font-size: $grunnur-font;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: $gutter;
+}

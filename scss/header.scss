@@ -1,23 +1,31 @@
 .header {
   max-width: $max-width;
   align-items: center;
+  margin-bottom: 4 * $gutter;
 
   &__forsida {
     background: url("bg.jpg") no-repeat fixed;
-    height: 60rem;
+    height: 50rem;
     width: 100%;
     background-size: cover;
     background-position: 50% 50%;
     overflow: auto;
     display: flex;
     justify-content: center;
-    &-content{
-      animation-name: none;
+
+  }
+  &__content {
+      /*animation-name: none;
       animation-duration: 3s;
       animation-timing-function: ease-in;
-      font-family: "Roboto Slab", serif;
-      font-size: 3* $grunnur-font;
-    }
+      transition-delay: 3s;*/
+      font-family: 'Roboto Slab', serif;
+      font-size: 2 * $grunnur-font;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      line-height: 2;
   }
   &__um-kaupa {
     background: url("bg-subpage.jpg");

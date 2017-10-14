@@ -22,90 +22,95 @@
         <h2>Um Fooþjónustuna</h2>
       </div>
     </header>
-    <div class="form">
-      <div class="form__uppl">
-        <div class="form__pers">
+    <div class="grid">
+      <div class="form">
+        <div class="row">
+          <div class="col col-6">
+            <div class ="form__content">
+              <legend class="form__header">Persónuupplýsingar</legend>
 
-          <legend class="form__header">Persónuupplýsingar</legend>
+              <label for="nafn" class="form__label">Nafn:</label>
+              <input type="text" class="form__input" name="nafn" id="nafn" required>
 
-          <label for="nafn" class="form__label">Nafn:</label>
-          <input type="text" class="form__input" name="nafn" id="nafn" required>
+              <label for="kennitala" class="form__label">Kennitala:</label>
+              <input type="text" class="form__input" name="kennitala" id="kennitala" required placeholder="12356-7890">
 
-          <label for="kennitala" class="form__label">Kennitala:</label>
-          <input type="text" class="form__input" name="kennitala" id="kennitala" required placeholder="12356-7890">
+              <label class="form__label">Kyn:</label>
+              <label class="form__label">
+                <input class="form__input" name="kyn" type="radio" value="kvk">
+                  Kona
+              </label>
+              <label class="form__label">
+                <input class="form__input" name="kyn" type="radio" value="kk">
+                  Karl
+              </label>
+              <label class="form__label">
+                <input class="form__input" name="kyn" type="radio" value="hk">
+                  Annað
+              </label>
 
-          <label class="form__label">Kyn:</label>
-          <label class="form__label">
-            <input class="form__input" name="kyn" type="radio" value="kvk">
-              Kona
-          </label>
-          <label class="form__label">
-            <input class="form__input" name="kyn" type="radio" value="kk">
-              Karl
-          </label>
-          <label class="form__label">
-            <input class="form__input" name="kyn" type="radio" value="hk">
-              Annað
-          </label>
+              <label for="simi" class="form__label">Sími:</label>
+              <input type="tel" class="form__input" name="simi" id="simi" required placeholder="+354 812 3456">
 
-          <label for="simi" class="form__label">Sími:</label>
-          <input type="tel" class="form__input" name="simi" id="simi" required placeholder="+354 812 3456">
+              <label for="address" class="form__label">Heimilisfang:</label>
+              <input type="address" class="form__input" name="address" id="address" required>
 
-          <label for="address" class="form__label">Heimilisfang:</label>
-          <input type="address" class="form__input" name="address" id="address" required>
+              <label class="form__label">
+                <input name="skra" class="form__input" type="checkbox" checked>
+                  Skrá mig á póstlista
+              </label>
+            </div>
+          </div>
+          <div class = "col col-6">
+            <div class="form__content">
 
-          <label class="form__label">
-            <input name="skra" class="form__input" type="checkbox" checked>
-              Skrá mig á póstlista
-          </label>
+                <legend class="form__header">Greiðslupplýsingar</legend>
 
+                <label for="kort" class="form__label">Greiða með:</label>
+                <select class="form__input" name="kort" id="kort">
+                  <option value="kredit" selected>Kreditkort</option>
+                  <option value="debet">Debetkort</option>
+                </select>
+
+                <label for="kortanafn" class="form__label">Nafn á korti:</label>
+                <input type="text" class="form__input" name="kortanafn" id="kortanafn" required>
+
+                <label for="kortanr" class="form__label">Kortanúmer:</label>
+                <input type="text" class="form__input" name="kortnr" id="kortanr" required placeholder="5999-9999-9999-9999">
+
+
+                <label for="timi" class="form__label">Gildistími:</label>
+                <div = class="form__gildistimi">
+                  <label for="man" class="form__merki">Mán</label>
+                  <select class="form__input__minni" name="timi" id="man">
+                    <option value="01" selected>01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <label for="ar" class="form__merki">Ár</label>
+                  <select class="form__input__minni" name="timi" id="ar">
+                    <option value="2017" selected>2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class = "form__greida">
-
-          <legend class="form__header">Greiðslupplýsingar</legend>
-
-          <label for="kort" class="form__label">Greiða með:</label>
-          <select class="form__input" name="kort" id="kort">
-            <option value="kredit" selected>Kreditkort</option>
-            <option value="debet">Debetkort</option>
-          </select>
-
-          <label for="kortanafn" class="form__label">Nafn á korti:</label>
-          <input type="text" class="form__input" name="kortanafn" id="kortanafn" required>
-
-          <label for="kortanr" class="form__label">Kortanúmer:</label>
-          <input type="text" class="form__input" name="kortnr" id="kortanr" required placeholder="5999-9999-9999-9999">
-
-          <label for="timi" class="form__label">Gildistími:</label>
-
-          <label for="man" class="form__merki">Mán</label>
-          <select class="form__input__minni" name="timi" id="man">
-            <option value="01" selected>01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <label for="ar" class="form__merki">Ár</label>
-          <select class="form__input__minni" name="timi" id="ar">
-            <option value="2017" selected>2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-          </select>
-
+        <div class="col col-12">
+          <button class="button">Panta</button>
         </div>
-      </div>
-      <div>
-        <button class="form__button">Panta</button>
       </div>
     </div>
     <footer class="footer">
