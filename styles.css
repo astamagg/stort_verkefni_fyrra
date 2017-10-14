@@ -89,18 +89,44 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 40px; }
   .footer-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border-bottom: 1px solid #fff; }
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .footer-row:first-of-type {
+      border-bottom: 1px solid #aaa; }
+    .footer-row:last-of-type {
+      color: #bbb;
+      font-size: 12px; }
   .footer-foo {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    .footer-foo :first-of-type {
-      align-content: end; }
+    align-items: center;
+    align-content: flex-start;
+    /* Þetta virkar ekki */
+    padding-left: 100px;
+    padding-right: 100px; }
+    .footer-foo:first-of-type {
+      justify-content: flex-end; }
+    .footer-foo:last-of-type {
+      justify-content: flex-start; }
+
+.card__img {
+  border-radius: 50%; }
+
+.card__content {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center; }
+  .card__content__alit {
+    font-size: 2em; }
 
 .navbar {
   z-index: 1;

@@ -1,5 +1,6 @@
 $grunnur-font: 16px;
 $max-width: 1200px;
+$gutter: 20px;
 
 .footer {
   background-color: #333;
@@ -8,22 +9,42 @@ $max-width: 1200px;
   flex-direction: column;
   justify-content: space-around;
   font-size: $grunnur-font;
+  padding-left: 2 * $gutter;
+  padding-right: 2 * $gutter;
 
   &-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border-bottom: 1px solid #fff;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
+    &:first-of-type {
+      border-bottom: 1px solid #aaa;
+
+    }
+    &:last-of-type {
+      color: #bbb;
+      font-size: 0.75 * $grunnur-font;
+    }
   }
 
   &-foo {
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    align-content: flex-start; /* Þetta virkar ekki */
 
-    :first-of-type {
-      align-content: end;
+    padding-left: 5 * $gutter;
+    padding-right: 5 * $gutter;
+
+    &:first-of-type {
+      justify-content: flex-end;
+    }
+
+    &:last-of-type {
+      justify-content: flex-start;
     }
 
   }
