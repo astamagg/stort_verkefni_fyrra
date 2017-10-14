@@ -10,18 +10,18 @@ $min-width: 400px;
 $font-main: 'Open-sans', 'helvetica','sans-serif';
 $font-Head: 'Roboto Slap';
 
-html {
+html {/* stylelint-disable-line */
   box-sizing: border-box;
 }
 
-*, *:before, *::after {
+*, *:before, *::after {/* stylelint-disable-line */
   box-sizing: inherit;
 
   padding: 0;
   margin: 0;
 }
 
-html {
+html {/* stylelint-disable-line */
   margin-right: $gutter;
   margin-left: $gutter;
 
@@ -31,11 +31,11 @@ html {
     margin: 0;
   }
 }
-img {
+img {/* stylelint-disable-line */
   max-width: 100%;
 }
 
-main {
+main {/* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
 

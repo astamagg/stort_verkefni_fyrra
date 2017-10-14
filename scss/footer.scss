@@ -1,13 +1,31 @@
 $grunnur-font: 16px;
+$max-width: 1200px;
 
 .footer {
   background-color: #333;
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   font-size: $grunnur-font;
 
-  &__col {
+  &-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+  }
+
+  &-foo {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    :first-of-type {
+      align-content: end;
+    }
 
   }
+
 }
