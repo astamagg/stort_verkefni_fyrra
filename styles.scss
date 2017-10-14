@@ -6,10 +6,43 @@ $gutter: 20px; /* Staðlaður gutter á grind */
 $max-width: 1200px;
 $mid-with: 600px;
 $min-width: 400px;
-
+/* Breytur með letrinu */
 $font-main: 'Open-sans', 'helvetica','sans-serif';
-
 $font-Head: 'Roboto Slap';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  box-sizing: inherit;
+
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  margin-right: $gutter;
+  margin-left: $gutter;
+
+  line-height: 1.5;
+
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+}
+
+
 
 @import "scss/grid";
 @import "scss/header";
