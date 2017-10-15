@@ -1,5 +1,7 @@
 .header {
   $max-width: 1200px;
+  $gutter: 20px;
+  $grunnur-font: 16px;
   align-items: center;
   &__forsida {
     background: url("bg.jpg") no-repeat fixed;

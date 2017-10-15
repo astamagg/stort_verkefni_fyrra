@@ -4,7 +4,7 @@ $gutter: 20px; /* Staðlaður gutter á grind */
 
 /* Staðlaðar skjástærðir */
 $max-width: 1200px;
-$mid-with: 600px;
+$mid-width: 600px;
 $min-width: 400px;
 /* Breytur með letrinu */
 $font-main: 'Open-sans', 'helvetica','sans-serif';
@@ -42,9 +42,9 @@ main {/* stylelint-disable-line */
   overflow-x: hidden;
 }
 
-
 @import "scss/form";
 @import "scss/grid";
+@import "scss/check";
 @import "scss/header";
 @import "scss/footer";
 @import "scss/heading";
