@@ -6,7 +6,6 @@ $max-width: 1200px;
 $mid-width: 600px;
 
 .form {
-
   padding: 2*$gutter 0 2*$gutter 0;
 
   &__content {
@@ -18,7 +17,6 @@ $mid-width: 600px;
     @media(max-width: 1199px){
       padding: 0 $gutter 0 $gutter;
     }
-
   }
   &__header {
     font-size: 1.3125 * $grunnur-font;

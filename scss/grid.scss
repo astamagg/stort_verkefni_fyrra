@@ -6,6 +6,12 @@ $gutter: 20px;
   margin-right: -($gutter / 2);
   margin-bottom: $gutter;
   margin-left: -($gutter / 2);
+
+  @media(max-width: 599px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @mixin columns($col: 1) {
   width: ($col / 12 * 100) * 1%;
@@ -30,14 +36,17 @@ $gutter: 20px;
     @include columns(4);
   }
   &-medium {
-    @media (max-width: 599px) {
+    @media (max-width: 1199px) {
       &-12 {
         @include columns(12);
+      }
+      &-6 {
+        @include columns(6);
       }
     }
   }
   &-small {
-    @media (max-width: 399px) {
+    @media (max-width: 599px) {
       &-12 {
         @include columns(12);
       }
@@ -49,14 +58,14 @@ $gutter: 20px;
     margin-left: (2 / 12 * 100) * 1%;
   }
   &-medium {
-    @media (max-width: 599px) {
+    @media (max-width: 1190px) {
       &-0 {
         margin-left: 0;
       }
     }
   }
   &-small {
-    @media (max-width: 399px) {
+    @media (max-width: 599px) {
       &-0 {
         margin-left: 0;
       }
