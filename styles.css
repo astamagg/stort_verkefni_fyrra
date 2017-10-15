@@ -72,8 +72,12 @@ main {
   padding-left: 10px; }
   .col-12 {
     width: 100%; }
+  .col-7 {
+    width: 58.33333%; }
   .col-6 {
     width: 50%; }
+  .col-5 {
+    width: 41.66667%; }
   .col-4 {
     width: 33.33333%; }
   @media (max-width: 599px) {
@@ -93,6 +97,21 @@ main {
 @media (max-width: 399px) {
   .offset-small-0 {
     margin-left: 0; } }
+
+.check {
+  display: flex;
+  flex-direction: column; }
+  .check__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 80px; }
+  .check img {
+    max-width: 40px; }
+  .check h3 {
+    font-family: 'Roboto Slab', serif; }
+  .check p {
+    font-family: 'Open Sans', sans-serif; }
 
 .header {
   align-items: center; }
@@ -178,10 +197,37 @@ main {
         padding-left: 10px;
         padding-right: 10px; } }
 
+.text {
+  padding: 4em 0em; }
+  .text__heading {
+    font-family: "Roboto Slab";
+    font-size: 2em;
+    font-weight: bold; }
+  .text__p {
+    font-family: "Open-sans", "helvetica", "sans-serif";
+    font-size: 16px;
+    padding-bottom: 16px;
+    line-height: 1.5em; }
+  .text__quote {
+    font-family: "Open-sans", "helvetica", "sans-serif";
+    font-size: 24px;
+    font-style: italic;
+    margin: 1em 3em;
+    margin-right: 0em; }
+    .text__quote p {
+      font-size: 16px;
+      font-style: initial;
+      padding-top: 1em; }
+  .text__forsida {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: 'Open Sans',sans-serif; }
+
 .button {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 40px 10px 40px;
+  padding: 10px 80px 10px 80px;
   margin: 0 auto 0;
   font-family: 'Open sans' serif;
   font-size: 16px;
@@ -190,6 +236,10 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 20px; }
+  .button__forsidu {
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding: 10px 40px 10px 40px; }
 
 .card {
   /*display: flex;
