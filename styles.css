@@ -173,38 +173,40 @@ main {
   margin-bottom: 20px; }
 
 .card {
-  /*display: flex;
-  flex-direction: column;*/
   max-width: 400px;
-  width: 100%; }
+  width: 100%;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif; }
   .card__img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px; }
   .card__content {
     display: flex;
-    padding: 15px;
     flex-direction: column;
     align-items: center; }
   .card__alit {
-    font-size: 3rem;
-    font-family: 'Open Sans',sans-serif;
-    font-style: italic; }
+    font-size: 22.4px;
+    font-style: italic;
+    padding-top: 1em;
+    text-align: center; }
   .card__nafn {
-    font-size: 2rem;
-    font-style: bold;
-    font-family: Merriweather, georgia, serif; }
+    font-size: 16px;
+    padding-top: 1em; }
   .card__askrift {
-    font-size: 1rem;
+    font-size: 12.8px;
     color: #999999; }
 
 .cardlist__row {
   display: flex;
-  flex-wrap: wrap;
   margin-right: -10px;
   margin-left: -10px; }
 
 .cardlist__col {
   width: 100%;
-  display: felx;
+  display: flex;
   padding-right: 10px;
   padding-left: 10px;
   margin: 0 0 20px; }
