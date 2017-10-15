@@ -1,8 +1,6 @@
 .header {
-  max-width: $max-width;
+  $max-width: 1200px;
   align-items: center;
-  margin-bottom: 4 * $gutter;
-  
   &__forsida {
     background: url("bg.jpg") no-repeat fixed;
     height: 50rem;
@@ -12,6 +10,7 @@
     overflow: auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 3*$gutter;
 
   }
   &__content {
