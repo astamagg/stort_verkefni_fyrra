@@ -3,10 +3,10 @@
     $font-main: 'Open-sans', 'helvetica','sans-serif';
     $grunnur-font: 16px;
     $font-Head: 'Roboto Slab';
+    $gutter: 20px;
 
     padding: 4em 0em;
     
-
     &__heading {
         font-family:$font-Head;
         font-size: 2em;
@@ -21,19 +21,30 @@
         line-height: 1.5em;
     }
 
-    &__quote {
-        font-family: $font-main;
-        font-size: 1.5* $grunnur-font;
-        font-style: italic;
-        margin: 1em 3em;
-        margin-right: 0em;
+    &__texti-med-float {
+        display: flex;
         
-        p {
+        &__p {
+            font-family: $font-main;
             font-size: $grunnur-font;
-            font-style: initial;
-            padding-top: 1em;
+            padding-bottom: 16px;
+            line-height: 1.5em;
+            max-width: 50%;
         }
 
+    }
+        &__quote {
+            font-family: $font-main;
+            font-size: 1.5* $grunnur-font;
+            font-style: italic;
+            margin: 1em 3em;
+            margin-right: 0em;
+
+            p {
+                font-size: $grunnur-font;
+                font-style: initial;
+                padding-top: 1em;
+            }
 
     }
 
