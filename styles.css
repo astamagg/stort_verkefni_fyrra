@@ -33,25 +33,32 @@ main {
   margin: 0 auto;
   overflow-x: hidden; }
 
-.form__content {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Open sans', serif;
-  padding: 0 100px 0 100px; }
-
-.form__header {
-  font-size: 32px;
-  margin-bottom: 20px; }
-
-.form__input {
-  margin-bottom: 20px;
-  border-radius: 3px;
-  border: solid 1px grey;
-  line-height: 2; }
-
-.form__input__minni {
-  width: 80px;
-  margin: 0 40px 0 40px; }
+.form {
+  padding: 40px 0 40px 0; }
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open sans', serif;
+    padding: 0 100px 0 100px; }
+    @media (max-width: 1199px) {
+      .form__content {
+        padding: 0 20px 0 20px; } }
+  .form__header {
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-family: "Roboto Slap"; }
+  .form__input {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: solid 1px grey;
+    line-height: 2; }
+  .form__input__minni {
+    width: 80px;
+    margin: 0 40px 0 40px; }
+    @media (max-width: 1199px) {
+      .form__input__minni {
+        width: 60px;
+        margin: 0 10px 0 10px; } }
 
 .row {
   display: flex;
