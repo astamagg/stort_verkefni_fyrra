@@ -17,8 +17,14 @@ $gutter: 20px;
   &-12 {
     @include columns(12);
   }
+  &-7 {
+    @include columns(7);
+  }
   &-6 {
     @include columns(6);
+  }
+  &-5 {
+    @include columns(5);
   }
   &-4 {
     @include columns(4);

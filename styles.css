@@ -65,8 +65,12 @@ main {
   padding-left: 10px; }
   .col-12 {
     width: 100%; }
+  .col-7 {
+    width: 58.33333%; }
   .col-6 {
     width: 50%; }
+  .col-5 {
+    width: 41.66667%; }
   .col-4 {
     width: 33.33333%; }
   @media (max-width: 599px) {
@@ -158,6 +162,33 @@ main {
       justify-content: flex-end; }
     .footer-foo:last-of-type {
       justify-content: flex-start; }
+
+.text {
+  padding: 4em 0em; }
+  .text__heading {
+    font-family: "Roboto Slab";
+    font-size: 2em;
+    font-weight: bold; }
+  .text__p {
+    font-family: "Open-sans", "helvetica", "sans-serif";
+    font-size: 16px;
+    padding-bottom: 16px;
+    line-height: 1.5em; }
+  .text__quote {
+    font-family: "Open-sans", "helvetica", "sans-serif";
+    font-size: 24px;
+    font-style: italic;
+    margin: 1em 3em;
+    margin-right: 0em; }
+    .text__quote p {
+      font-size: 16px;
+      font-style: initial;
+      padding-top: 1em; }
+  .text__forsida {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: 'Open Sans',sans-serif; }
 
 .button {
   color: white;
