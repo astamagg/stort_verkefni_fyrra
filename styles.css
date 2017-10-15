@@ -138,6 +138,14 @@ main {
   font-size: 16px;
   padding-left: 40px;
   padding-right: 40px; }
+  @media (max-width: 600px) {
+    .footer {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 400px) {
+    .footer {
+      padding-left: 10px;
+      padding-right: 10px; } }
   .footer-row {
     display: flex;
     flex-direction: row;
@@ -154,14 +162,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: flex-start;
-    /* Þetta virkar ekki */
     padding-left: 100px;
-    padding-right: 100px; }
-    .footer-foo:first-of-type {
-      justify-content: flex-end; }
-    .footer-foo:last-of-type {
-      justify-content: flex-start; }
+    padding-right: 100px;
+    justify-content: flex-start;
+    text-align: center; }
+    @media (max-width: 750px) {
+      .footer-foo {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 400px) {
+      .footer-foo {
+        padding-left: 10px;
+        padding-right: 10px; } }
 
 .text {
   padding: 4em 0em; }
