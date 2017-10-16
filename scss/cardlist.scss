@@ -1,19 +1,31 @@
 .cardlist{
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ac3dbf39b0f65414bddbef42bf22eea30dbd11c0
   &__row{
     display: flex;
     margin-right: -10px;
     margin-left: -10px;
   }
   &__col{
-    @include columns(12);
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
     margin: 0 0 20px;
+    &-12 {
+      @include columns(12);
+    }
+    &-medium {
+      @media(max-width: 599px) {
+        &-12 {
+          @include columns(12);
+        }
+      }
+    }
+    &-small {
+      @media(max-width: 399px) {
+        &-12 {
+          @include columns(12);
+        }
+      }
+    }
   }
 }
