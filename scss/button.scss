@@ -1,20 +1,19 @@
 .button {
-  color: white;
-  background-color:rgba(0, 0,0, 0.7);
-  padding: 0.5*$gutter 4* $gutter 0.5*$gutter 4*$gutter;
-  margin: 0 auto 0;
-  font-family: 'Open sans' serif;
-  font-size: $grunnur-font;
-  border: none;
-  border-radius: 3px;
   display: flex;
-  justify-content: center;
+  padding: 0.5 * $gutter 4 * $gutter 0.5 * $gutter 4 * $gutter;
+  margin: 0 auto;
   margin-bottom: $gutter;
+  font-family: $font-main;
+  font-size: $grunnur-font;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  justify-content: center;
 
   &__forsidu {
-    font-size: 2*$grunnur-font;
-    margin-bottom: 2*$gutter;
-    padding: 0.5*$gutter 4* $gutter 0.5*$gutter 4*$gutter;
+    padding: 0.5 * $gutter 4 * $gutter 0.5 * $gutter 4 * $gutter;
+    margin-bottom: 2 * $gutter;
+    font-size: 2 * $grunnur-font;
   }
-
 }

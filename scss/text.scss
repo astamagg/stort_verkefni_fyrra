@@ -1,36 +1,38 @@
+$font-main: "Open-sans", "helvetica","sans-serif";
+$grunnur-font: 16px;
+$font-Head: "Roboto Slab";
+$gutter: 20px;
+
 .text {
-    $font-main: 'Open-sans', 'helvetica','sans-serif';
-    $grunnur-font: 16px;
-    $font-Head: 'Roboto Slab';
-    $gutter: 20px;
+  padding: 4em 0em;
 
-    padding: 4em 0em;
+  &__heading {
+    font-weight: bold;
+  }
 
-    &__heading {
-        font-weight: bold;
-    }
-    &__p {
-        padding-bottom: 16px;
-        line-height: 1.5em;
-    }
-    &__quote {
-        font-family: $font-main;
-        font-size: 1.5* $grunnur-font;
-        font-style: italic;
-        margin: 1em 3em;
-        margin-right: 0em;
+  &__p {
+    padding-bottom: 16px;
+    line-height: 1.5em;
+  }
 
-            @media(max-width: 1200px) {
-            }
+  &__quote {
+    margin: 1em 3em;
+    margin-right: 0rem;
+    font-family: $font-main;
+    font-size: 1.5 * $grunnur-font;
+    font-style: italic;
 
-            p {
-                font-style: initial;
-                padding-top: 1em;
-            }
+    @media (max-width: 1200px) {
     }
 
-    &__forsida {
-        text-align: center;
-        padding-bottom: 1em;
+    p { /*stylelint-disable-line*/
+      padding-top: 1em;
+      font-style: initial;
     }
+  }
+
+  &__forsida {
+    padding-bottom: 1em;
+    text-align: center;
+  }
 }

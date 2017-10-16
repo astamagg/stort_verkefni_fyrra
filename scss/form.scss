@@ -1,42 +1,46 @@
 $gutter: 20px;
 $grunnur-font: 16px;
-$font-Head: 'Roboto Slap';
+$font-Head: "Roboto Slap";
+$font-main: "Open-sans", "helvetica","sans-serif";
 
 $max-width: 1200px;
 $mid-width: 600px;
 
 .form {
-  padding: 2*$gutter 0 2*$gutter 0;
+  padding: 2 * $gutter 0 2 * $gutter 0;
 
   &__content {
-    display:flex;
+    display: flex;
+    padding: 0 5 * $gutter 0 5 * $gutter;
+    font-family: $font-main;
     flex-direction: column;
-    font-family: 'Open sans', serif;
-    padding: 0 5*$gutter 0 5*$gutter;
 
-    @media(max-width: 1199px){
+    @media (max-width: 1199px) {
       padding: 0 $gutter 0 $gutter;
     }
   }
+
   &__header {
-    font-size: 1.3125 * $grunnur-font;
     margin-bottom: $gutter;
     font-family: $font-Head;
+    font-size: 1.3125 * $grunnur-font;
   }
+
   &__input {
     margin-bottom: $gutter;
-    border-radius: 3px;
-    border: solid 1px grey;
     line-height: 2;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
   }
 
   &__input__minni {
-    width:4*$gutter;
-    margin: 0 2*$gutter 0 2*$gutter;
+    width: 4 * $gutter;
+    margin: 0 2 * $gutter 0 2 * $gutter;
 
-    @media(max-width: 1199px){
+    @media (max-width: 1199px) {
+
       width: 3 * $gutter;
-      margin: 0 10px 0 10px;
+      margin: 0 0.5 * $gutter 0 0.5 * $gutter;
     }
   }
- }
+}
