@@ -6,12 +6,12 @@
     $gutter: 20px;
 
     padding: 4em 0em;
-    
+
     &__heading {
         font-family:$font-Head;
         font-size: 2em;
-        font-weight: bold; 
-        
+        font-weight: bold;
+
     }
 
     &__p {
@@ -23,7 +23,7 @@
 
     &__texti-med-float {
         display: flex;
-        
+
         &__p {
             font-family: $font-main;
             font-size: $grunnur-font;
@@ -45,7 +45,6 @@
                 font-style: initial;
                 padding-top: 1em;
             }
-
     }
 
     &__forsida {
