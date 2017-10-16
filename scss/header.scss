@@ -27,11 +27,9 @@
     overflow: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 3*$gutter;
+    margin-bottom: 5*$gutter;
   }
   &__content {
-      font-family: 'Roboto Slab', serif;
-      font-size: 2 * $grunnur-font;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -57,9 +55,6 @@
     overflow: auto;
     display: flex;
     justify-content: flex-start;
-    padding-left: 2* $gutter;
     color: white;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.5*$grunnur-font;
   }
 }

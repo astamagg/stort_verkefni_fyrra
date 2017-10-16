@@ -1,4 +1,3 @@
-
 .text {
     $font-main: 'Open-sans', 'helvetica','sans-serif';
     $grunnur-font: 16px;
@@ -8,41 +7,30 @@
     padding: 4em 0em;
 
     &__heading {
-        font-family:$font-Head;
-        font-size: 2em;
         font-weight: bold;
     }
-
     &__p {
-        font-family: $font-main;
-        font-size: $grunnur-font;
         padding-bottom: 16px;
         line-height: 1.5em;
     }
-
-        &__quote {
-            font-family: $font-main;
-            font-size: 1.5* $grunnur-font;
-            font-style: italic;
-            margin: 1em 3em;
-            margin-right: 0em;
-
-            
+    &__quote {
+        font-family: $font-main;
+        font-size: 1.5* $grunnur-font;
+        font-style: italic;
+        margin: 1em 3em;
+        margin-right: 0em;
 
             @media(max-width: 1200px) {
             }
 
             p {
-                font-size: $grunnur-font;
                 font-style: initial;
                 padding-top: 1em;
             }
     }
 
     &__forsida {
-        font-size: 1.5rem;
         text-align: center;
         padding-bottom: 1em;
-        font-family: 'Open Sans',sans-serif;
     }
 }

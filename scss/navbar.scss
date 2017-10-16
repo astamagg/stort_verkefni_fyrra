@@ -1,31 +1,47 @@
+$max-width: 1200px;
+$mid-width: 600px;
+$min-width: 400px;
+$gutter: 20px;
+$grunnur: 16px;
+
 .navbar {
-  $max-width: 1200px;
-  $gutter: 20px;
-  $grunnur: 16px;
   width: 100%;
   z-index: 1;
-  overflow: hidden;
+  overflow: auto;
   background:rgba(0, 0,0, 0.8);
   position: fixed;
-  height: 3rem;
+  height: 3*$gutter;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  a{
+  @media(max-width: 1199px) {
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+  }
+  @media(max-width: 599px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  a {
    color:white;
    text-decoration: none;
-   font-family: 'Roboto Slab', serif;
-   font-size: $grunnur-font;
- }
-
+  }
+  &__forsida {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.5*$grunnur-font;
+    margin-left: $gutter;
+    @media(max-width: 599px) {
+      margin-left: 0.5*$gutter;
+    }
+  }
   &__saman {
-    /*a {
-      &:last-of-type {
-        border: 1px white;
-        background-color:rgba(255, 255,255, 0.2):
-      }
-    }*/
+    font-family: 'Open Sans', serif;
+    @media(max-width:1199px) {
+      padding-right: $gutter;
+    }
     @media(max-width: 599px) {
     a {
       &:last-of-type {
@@ -37,13 +53,6 @@
   &__button {
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 $gutter;
-    padding: 0 $gutter;
+    padding: 0.5*$gutter $gutter;
   }
-
-}
-.navbar a{
-  color:white;
-  text-decoration: none;
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.5rem;
 }
