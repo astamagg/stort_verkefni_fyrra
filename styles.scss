@@ -26,10 +26,8 @@ html {/* stylelint-disable-line */
   margin-left: $gutter;
 
   line-height: 1.5;
-
-  @media (min-width: $max-width) {
+  
     margin: 0;
-  }
 }
 img {/* stylelint-disable-line */
   max-width: 100%;
