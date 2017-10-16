@@ -3,27 +3,18 @@ $mid-width: 600px;
 $min-width: 400px;
 $gutter: 20px;
 $grunnur: 16px;
+$grunnur-font : 16px;
 
 .navbar {
   width: 100%;
   z-index: 1;
   overflow: auto;
   background:rgba(0, 0,0, 0.8);
-  position: fixed;
+  position: absolute;
   height: 3*$gutter;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media(max-width: 1199px) {
-    padding-right: $gutter;
-    padding-left: $gutter;
-
-  }
-  @media(max-width: 599px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
   a {
    color:white;
