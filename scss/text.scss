@@ -7,7 +7,7 @@ $mid-width: 600px;
 $min-width: 400px;
 
 .text {
-  padding: 4em 0em;
+  padding: 4em 0;
 
   &__heading {
     font-weight: bold;
@@ -20,17 +20,14 @@ $min-width: 400px;
 
   &__quote {
     margin: 1em 3em;
-    margin-right: 0rem;
+    margin-right: 0;
     font-family: $font-main;
     font-size: 1.5 * $grunnur-font;
     font-style: italic;
 
-    @media (max-width: $max-width) {
-    }
-
     p { /*stylelint-disable-line*/
       padding-top: 1em;
-      font-style: initial;
+      font-style: normal;
     }
   }
 
