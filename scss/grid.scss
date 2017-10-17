@@ -7,6 +7,13 @@ $gutter: 20px;
  margin-bottom: $gutter;
  margin-left: -($gutter / 2);
  flex-direction: row;
+ 
+ @media (max-width: 1199px) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+ }
 
  &-small {
   @media (max-width: 1199px) {
@@ -14,13 +21,6 @@ $gutter: 20px;
   }
   @media (max-width: 599px) {
    flex-direction: column-reverse;
-  }
-
-  @media (max-width: 1199px) {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   align-items: center;
   }
  }
 
