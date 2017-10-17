@@ -1,16 +1,18 @@
 $gutter: 20px;
-.card{
-  max-width: 20*$gutter;
-  width: 100%;
+$font-main: "Open-sans", "helvetica","sans-serif";
+
+.card {
   display: flex;
+  width: 100%;
+  max-width: 20*$gutter;
+  margin-right: auto;
+  font-family: $font-main;
   flex-direction: row;
   align-items: center;
-  margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
 
-  @media(max-width: 1199px) {
-    padding-left: 2 * $gutter;
+  @media (max-width: 1199px) {
     padding-right: 2 * $gutter;
+    padding-left: 2 * $gutter;
   }
 
   &__saman {
@@ -24,52 +26,42 @@ $gutter: 20px;
   }
 
   &__stakur {
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
       display: flex;
       justify-content: center;
     }
   }
 
-  &__img{
-    border-radius: 50%;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
+  &__img {
     padding: 0 $gutter 0 $gutter;
+    border-radius: 50%;
   }
 
-  &__content{
+  &__content {
     display: flex;
+    padding-bottom: 3em;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3em;
 
-    @media(max-width: 1199px) {
-    /*  text-align: center;*/
-        /*display: flex;*/
-        align-self: center;
-
-      }
+    @media (max-width: 1199px) {
+      align-self: center;
     }
-    &__alit{
-      font-size:1.4* $grunnur-font;
-      font-style: italic;
-      padding-top: 1em;
-      text-align: center;
+  }
 
-    }
+  &__alit {
+    padding-top: 1em;
+    font-size: 1.4 * $grunnur-font;
+    font-style: italic;
+    text-align: center;
+  }
 
-    &__nafn{
+  &__nafn {
+    padding-top: 1em;
+    font-size: 1*$grunnur-font;
+  }
 
-      font-size: 1*$grunnur-font;
-      padding-top: 1em;
-
-
-    }
-
-    &__askrift{
-      font-size: 0.8*$grunnur-font;
-      color: #999999;
-    }
-
+  &__askrift {
+    font-size: 0.8*$grunnur-font;
+    color: #999;
+  }
 }

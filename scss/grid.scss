@@ -1,83 +1,102 @@
 $gutter: 20px;
 
 .row {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  flex-direction: row;
-  margin-right: -($gutter / 2);
-  margin-bottom: $gutter;
-  margin-left: -($gutter / 2);
+ display: flex;
+ margin-top: 3 * $gutter;
+ margin-right: -($gutter / 2);
+ margin-bottom: $gutter;
+ margin-left: -($gutter / 2);
+ flex-direction: row;
 
-  @media(max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+ &-small {
+  @media (max-width: 1199px) {
+   flex-direction: row;
   }
-}
-@mixin columns($col: 1) {
+  @media (max-width: 599px) {
+   flex-direction: column-reverse;
+  }
+
+  @media (max-width: 1199px) {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+  }
+ }
+
+ @mixin columns($col: 1) {
   width: ($col / 12 * 100) * 1%;
-}
-.col {
+ }
+
+ .col {
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
 
-  &-12 {
+   &-12 {
     @include columns(12);
-  }
-  &-8 {
+   }
+
+   &-8 {
     @include columns(8);
-  }
-  &-7 {
+   }
+
+   &-7 {
     @include columns(7);
-  }
-  &-6 {
+   }
+
+   &-6 {
     @include columns(6);
-  }
-  &-5 {
+   }
+
+   &-5 {
     @include columns(5);
-  }
-  &-4 {
+   }
+
+   &-4 {
     @include columns(4);
-  }
-  &-medium {
+   }
+
+   &-medium {
     @media (max-width: 1199px) {
-      &-12 {
-        @include columns(12);
-      }
-      &-6 {
-        @include columns(6)}
-      &-4 {
-        @include columns(4);
-      }
-      }
+     &-12 {
+      @include columns(12);
+     }
+     &-6 {
+      @include columns(6);
+     }
+     &-4 {
+      @include columns(4);
+     }
     }
-  &-small {
+   }
+   &-small {
     @media (max-width: 599px) {
-      &-12 {
-        @include columns(12);
-      }
+     &-12 {
+      @include columns(12);
+     }
     }
+   }
   }
-}
+
 .offset {
-  &-2 {
-    margin-left: (2 / 12 * 100) * 1%;
-  }
-  &-medium {
-    @media (max-width: 1190px) {
-      &-0 {
-        margin-left: 0;
-      }
-    }
-  }
-  &-small {
-    @media (max-width: 599px) {
-      &-0 {
-        margin-left: 0;
-      }
+ &-2 {
+  margin-left: (2 / 12 * 100) * 1%;
+ }
 
+ &-medium {
+  @media (max-width: 1190px) {
+   &-0 {
+    margin-left: 0;
+   }
+  }
+ }
 
-    }
+ &-small {
+  @media (max-width: 599px) {
+   &-0 {
+    margin-left: 0;
+   }
   }
-  }
+ }
+}
+}

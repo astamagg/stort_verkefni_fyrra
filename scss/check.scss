@@ -4,12 +4,16 @@
 
   &__content {
     display: flex;
-    margin-bottom: 4 * $gutter;
+    margin-bottom: 6 * $gutter;
     flex-direction: row;
     align-items: flex-start;
+
+    @media (max-width: 1199px) {
+      padding-left: $gutter;
+    }
   }
 
   img { /*stylelint-disable-line*/
-    max-width: 2*$gutter;
+    max-width: 2 * $gutter;
   }
 }
