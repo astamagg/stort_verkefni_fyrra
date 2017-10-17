@@ -1,56 +1,38 @@
+$font-main: "Open-sans", "helvetica","sans-serif";
+$grunnur-font: 16px;
+$font-Head: "Roboto Slab";
+$gutter: 20px;
+$max-width: 1200px;
+$mid-width: 600px;
+$min-width: 400px;
 
 .text {
-    $font-main: 'Open-sans', 'helvetica','sans-serif';
-    $grunnur-font: 16px;
-    $font-Head: 'Roboto Slab';
-    $gutter: 20px;
+  padding: 4em 0;
 
-    padding: 4em 0em;
+  &__heading {
+    font-weight: bold;
+  }
 
-    &__heading {
-        font-family:$font-Head;
-        font-size: 2em;
-        font-weight: bold;
+  &__p {
+    padding-bottom: 16px;
+    line-height: 1.5em;
+  }
 
+  &__quote {
+    margin: 1em 3em;
+    margin-right: 0;
+    font-family: $font-main;
+    font-size: 1.5 * $grunnur-font;
+    font-style: italic;
+
+    p { /*stylelint-disable-line*/
+      padding-top: 1em;
+      font-style: normal;
     }
+  }
 
-    &__p {
-        font-family: $font-main;
-        font-size: $grunnur-font;
-        padding-bottom: 16px;
-        line-height: 1.5em;
-    }
-
-    &__texti-med-float {
-        display: flex;
-
-        &__p {
-            font-family: $font-main;
-            font-size: $grunnur-font;
-            padding-bottom: 16px;
-            line-height: 1.5em;
-            max-width: 50%;
-        }
-
-    }
-        &__quote {
-            font-family: $font-main;
-            font-size: 1.5* $grunnur-font;
-            font-style: italic;
-            margin: 1em 3em;
-            margin-right: 0em;
-
-            p {
-                font-size: $grunnur-font;
-                font-style: initial;
-                padding-top: 1em;
-            }
-    }
-
-    &__forsida {
-        font-size: 1.5rem;
-        text-align: center;
-        padding-bottom: 1em;
-        font-family: 'Open Sans',sans-serif;
-    }
+  &__forsida {
+    padding-bottom: 1em;
+    text-align: center;
+  }
 }

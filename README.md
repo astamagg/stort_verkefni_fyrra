@@ -8,5 +8,9 @@ Höfundar:
 
 Síðan er skrifuð í UTF-8.
 Vefsíðan er sett upp á heimasvæði Margrétar hjá Reiknistofnun Háskóla Íslands og hefur slóðina :
+<<<<<<< HEAD
   https://notendur.hi.is/~mav28/vefforritun/stortverkefni1
   
+=======
+https://notendur.hi.is/~mav28/vefforritun/stortverkefni1
+>>>>>>> f783cc2fe871e96d8c1dfd580973b7090cf1b903

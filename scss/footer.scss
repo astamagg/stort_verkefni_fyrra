@@ -5,63 +5,61 @@ $min-width: 400px;
 $gutter: 20px;
 
 .footer {
-  background-color: #333;
-  color: #fff;
   display: flex;
+  padding-right: 2 * $gutter;
+  padding-left: 2 * $gutter;
+  color: #fff;
   flex-direction: column;
   justify-content: space-around;
-  font-size: $grunnur-font;
-  padding-left: 2 * $gutter;
-  padding-right: 2 * $gutter;
+  background-color: #333;
 
-  @media(max-width: $mid-width) {
-    padding-left: $gutter;
+  @media (max-width: $mid-width) {
     padding-right: $gutter;
-
+    padding-left: $gutter;
   }
-  @media(max-width: $min-width) {
-    padding-left: 10px;
+
+  @media (max-width: $min-width) {
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   &-row {
     display: flex;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
     flex-direction: row;
     align-content: stretch;
     justify-content: center;
-    padding-top: $gutter;
-    padding-bottom: $gutter;
 
     &:first-of-type {
+
       border-bottom: 1px solid #aaa;
 
     }
+
     &:last-of-type {
-      color: #bbb;
       font-size: 0.75 * $grunnur-font;
+      color: #bbb;
     }
   }
 
   &-foo {
     display: flex;
+    padding-right: 5 * $gutter;
+    padding-left: 5 * $gutter;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    padding-left: 5 * $gutter;
-    padding-right: 5 * $gutter;
     justify-content: flex-start;
-    text-align: center;
 
-    @media(max-width: 750px) {
-      padding-left: 2 * $gutter;
+    @media (max-width: 750px) {
       padding-right: 2 * $gutter;
-
+      padding-left: 2 * $gutter;
     }
-    @media(max-width: $min-width) {
-      padding-left: 10px;
+
+    @media (max-width: $min-width) {
       padding-right: 10px;
-
+      padding-left: 10px;
     }
-
   }
-
 }

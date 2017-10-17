@@ -1,21 +1,29 @@
+$gutter: 20px;
+$mid-width: 600px;
+
 .check {
   display: flex;
   flex-direction: column;
 
   &__content {
     display: flex;
+    margin-bottom: 6 * $gutter;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 4*$gutter;
-  }
-  img {
-    max-width: 2*$gutter;
+
+    @media (max-width: 1199px) {
+      padding-left: $gutter;
+    }
   }
 
-  h3 {
-    font-family: 'Roboto Slab', serif;
+  img { /*stylelint-disable-line*/
+    max-width: 2 * $gutter;
   }
-  p {
-    font-family: 'Open Sans', sans-serif;
+
+  &__myndhlid {
+    @media (max-width: 1199px) {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
   }
 }
