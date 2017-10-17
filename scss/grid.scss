@@ -2,24 +2,22 @@ $gutter: 20px;
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
   margin-right: -($gutter / 2);
   margin-bottom: $gutter;
   margin-left: -($gutter / 2);
 
-  @media (max-width: 599px) {
-
+  @media(max-width: 1199px) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 }
-
 @mixin columns($col: 1) {
-
   width: ($col / 12 * 100) * 1%;
 }
-
 .col {
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
@@ -27,35 +25,33 @@ $gutter: 20px;
   &-12 {
     @include columns(12);
   }
-
+  &-8 {
+    @include columns(8);
+  }
   &-7 {
     @include columns(7);
   }
-
   &-6 {
     @include columns(6);
   }
-
   &-5 {
     @include columns(5);
   }
-
   &-4 {
     @include columns(4);
   }
-
   &-medium {
     @media (max-width: 1199px) {
       &-12 {
         @include columns(12);
       }
-
       &-6 {
-        @include columns(6);
+        @include columns(6)}
+      &-4 {
+        @include columns(4);
+      }
       }
     }
-  }
-
   &-small {
     @media (max-width: 599px) {
       &-12 {
@@ -64,12 +60,10 @@ $gutter: 20px;
     }
   }
 }
-
 .offset {
   &-2 {
     margin-left: (2 / 12 * 100) * 1%;
   }
-
   &-medium {
     @media (max-width: 1190px) {
       &-0 {
@@ -77,12 +71,13 @@ $gutter: 20px;
       }
     }
   }
-
   &-small {
     @media (max-width: 599px) {
       &-0 {
         margin-left: 0;
       }
+
+
     }
   }
-}
+  }

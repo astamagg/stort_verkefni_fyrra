@@ -57,13 +57,15 @@ main {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
   margin-right: -10px;
   margin-bottom: 20px;
   margin-left: -10px; }
-  @media (max-width: 599px) {
+  @media (max-width: 1199px) {
     .row {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-items: center; } }
 
@@ -72,6 +74,8 @@ main {
   padding-left: 10px; }
   .col-12 {
     width: 100%; }
+  .col-8 {
+    width: 66.66667%; }
   .col-7 {
     width: 58.33333%; }
   .col-6 {
@@ -84,7 +88,9 @@ main {
     .col-medium-12 {
       width: 100%; }
     .col-medium-6 {
-      width: 50%; } }
+      width: 50%; }
+    .col-medium-4 {
+      width: 33.33333%; } }
   @media (max-width: 599px) {
     .col-small-12 {
       width: 100%; } }
@@ -262,18 +268,42 @@ main {
 .card {
   max-width: 400px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   margin-right: auto;
   font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 1199px) {
+    .card {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  .card__saman {
+    display: flex;
+    flex-direction: row; }
+    @media (max-width: 599px) {
+      .card__saman {
+        display: flex;
+        flex-direction: column; } }
+  @media (max-width: 1199px) {
+    .card__stakur {
+      display: flex;
+      justify-content: center; } }
   .card__img {
     border-radius: 50%;
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
     padding: 0 20px 0 20px; }
   .card__content {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 3em; }
+    @media (max-width: 1199px) {
+      .card__content {
+        /*  text-align: center;*/
+        /*display: flex;*/
+        align-self: center; } }
   .card__alit {
     font-size: 22.4px;
     font-style: italic;
@@ -296,11 +326,11 @@ main {
   padding-right: 10px;
   padding-left: 10px;
   margin: 0 0 20px; }
-  .cardlist__col-12 {
-    width: 100%; }
+  .cardlist__col-4 {
+    width: 33.33333%; }
   @media (max-width: 599px) {
-    .cardlist__col-medium-12 {
-      width: 100%; } }
+    .cardlist__col-medium-6 {
+      width: 50%; } }
   @media (max-width: 399px) {
     .cardlist__col-small-12 {
       width: 100%; } }
