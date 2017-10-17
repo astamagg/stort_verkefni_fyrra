@@ -11,17 +11,17 @@ $mid-width: 600px;
     flex-direction: row;
     align-items: flex-start;
 
-    @media (max-width: 1199px ) {
+    @media (max-width: 1199px) {
       padding-left: $gutter;
     }
   }
 
   img { /*stylelint-disable-line*/
     max-width: 2 * $gutter;
-
   }
+
   &__myndhlid {
-    @media (max-width: 1199px ) {
+    @media (max-width: 1199px) {
       padding-right: $gutter;
       padding-left: $gutter;
     }
