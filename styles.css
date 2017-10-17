@@ -16,7 +16,6 @@ html {
 
 html {
   /* stylelint-disable-line */
-  margin: 0 20px 0 20px;
   line-height: 1.5; }
 
 img {
@@ -239,6 +238,10 @@ main {
     padding-bottom: 1em;
     text-align: center; }
 
+@media (max-width: 599px) {
+  .row-small {
+    flex-direction: column-reverse; } }
+
 .button {
   display: flex;
   padding: 10px 80px 10px 80px;
@@ -318,7 +321,7 @@ main {
     text-decoration: none; }
   .navbar__forsida {
     margin-left: 20px;
-    font-family: "Roboto Slap";
+    font-family: "Roboto Slab";
     font-size: 24px; }
     @media (max-width: 599px) {
       .navbar__forsida {
