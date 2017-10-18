@@ -18,6 +18,10 @@ $mid-width: 600px;
     @media (max-width: 1199px) {
       padding: 0 $gutter 0 $gutter;
     }
+    @media (max-width: 599px) {
+      padding: 0 $gutter 0 $gutter;
+      margin-bottom: 2 * $gutter;
+    }
   }
 
   &__header {

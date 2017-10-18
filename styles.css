@@ -38,6 +38,10 @@ main {
     @media (max-width: 1199px) {
       .form__content {
         padding: 0 20px 0 20px; } }
+    @media (max-width: 599px) {
+      .form__content {
+        padding: 0 20px 0 20px;
+        margin-bottom: 40px; } }
   .form__header {
     margin-bottom: 20px;
     font-family: "Roboto Slap";
@@ -74,6 +78,19 @@ main {
   @media (max-width: 599px) {
     .row-small {
       flex-direction: column-reverse; } }
+  .row-kaupa {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    margin-left: -10px; }
+    @media (max-width: 1199px) {
+      .row-kaupa {
+        align-items: flex-start; } }
+    @media (max-width: 599px) {
+      .row-kaupa {
+        flex-direction: column-reverse; } }
 
 .col {
   padding-right: 10px;
@@ -237,7 +254,7 @@ main {
         padding-left: 10px; } }
 
 .text {
-  padding: 4em 0; }
+  padding: 4em 1em; }
   .text__heading {
     font-weight: bold; }
   .text__p {
