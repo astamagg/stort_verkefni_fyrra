@@ -39,7 +39,7 @@ $min-width: 400px;
     }
 
     @media (max-width: 599px) {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 }
